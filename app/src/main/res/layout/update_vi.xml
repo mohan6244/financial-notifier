@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:visibility="visible"
+    android:fillViewport="false"
+    android:transitionGroup="false">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle No."
+            android:textColor="#f84b4146"/>
+
+        <EditText
+            android:id="@+id/editVehicleNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <requestFocus />
+        </EditText>
+        </LinearLayout>
+        
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textDetails"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Details"
+            android:textColor="#f84b4146"/>
+        <EditText
+            android:id="@+id/editVehicleDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textCapWords" >
+        </EditText>
+        </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textValue"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Value "
+            android:textColor="#f84b4146"/>
+
+        <EditText
+            android:id="@+id/editVehicleValue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:translationZ="@dimen/abc_text_size_display_4_material">
+        </EditText>
+        </LinearLayout>
+        
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textPolicyno"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Policy Number "
+            android:textColor="#f84b4146"/>
+
+        <EditText
+            android:id="@+id/editPolicyNo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+        </EditText>
+        
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/textStartdate"
+            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:text="Start Date  "
+            android:textColor="#f84b4146"/>
+            
+            <EditText
+                android:id="@+id/editStartDate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+            </EditText>
+       
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+           <TextView
+            android:id="@+id/textEnddate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="End Date  "
+            android:textColor="#f84b4146"/>
+                        
+            <EditText
+                android:id="@+id/editEndDate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Insurance Amount  "
+            android:textColor="#f84b4146"/>
+
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" >
+
+        </EditText>
+
+        </LinearLayout>
+
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+         <TextView
+            android:id="@+id/textCompany"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Company "
+             android:textColor="#f84b4146"/>
+
+        <EditText
+            android:id="@+id/editCompany"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords">
+        </EditText>
+         </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="updateVehicle"
+            android:text="Update"></Button>
+            
+            <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="deleteVehicle"
+            android:text="Delete"></Button>
+       </LinearLayout>
+            
+    </LinearLayout>
+
+</ScrollView>

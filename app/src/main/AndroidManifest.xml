@@ -79,6 +79,10 @@
                 <action android:name="com.st.fn.NOTIFY" />
             </intent-filter>
         </receiver>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e978bb98919b00f99dd7b188dfcf69903592d84c" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

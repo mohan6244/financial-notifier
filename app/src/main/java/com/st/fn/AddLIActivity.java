@@ -70,6 +70,9 @@ public class AddLIActivity extends Activity {
 	};
 
 	public void add(View v) {
+        if(editPolicyName.getText().toString() == "") {
+            Toast.makeText(this, "Enter Policy Name", Toast.LENGTH_LONG).show();
+        }
 		try {
 			DBHelper dbhelper = new DBHelper(this);
 			SQLiteDatabase db = dbhelper.getWritableDatabase();

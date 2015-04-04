@@ -1,5 +1,8 @@
 package com.st.fn;
 
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 import java.util.Calendar;
 
 import android.app.Activity;
@@ -12,9 +15,16 @@ import android.view.View;
 
 public class FinancialNotifierMenuActivity extends Activity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "QA3OXb9nQQj2rYOmhWPVa7jhk";
+    private static final String TWITTER_SECRET = "8wRZeKfW8IDVz0N9FP26Mxxco40empMTIsrll9LwxFSkANE5hm";
+
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+		Fabric.with(this, new Twitter(authConfig));
 		setContentView(R.layout.main);
 		setAlarm();
 		Database.getPreferences(this);

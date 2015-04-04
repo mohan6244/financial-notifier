@@ -17,4 +17,10 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Hlasové vyhledávání"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Sdílet pomocí"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Sdílet pomocí %s"</string>
+    <!-- From: file:/D:/FinancialNotifier1/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values-cs/values.xml -->
+    <eat-comment/>
+    <string name="tw__allow_btn_txt">Povolit</string>
+    <string name="tw__not_now_btn_txt">Nepovolit</string>
+    <string name="tw__share_email_desc">Když uživateli %1$s povolíte přístup k e-mailové adrese ve svém účtu na Twitteru \@%2$s, budete od něj dostávat novinky a další informace.</string>
+    <string name="tw__share_email_title">Sdílejte svou e-mailovou adresu</string>
 </resources>

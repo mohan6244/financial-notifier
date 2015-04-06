@@ -72,6 +72,9 @@
             android:name="com.st.fn.BackupRestoreActivity"
             android:label="Backup and Restore" >
         </activity>
+        <activity
+            android:name="com.st.fn.PaymentActivity"
+            android:label="payment" />
 
         <receiver android:name="com.st.fn.DateChangeBroadcastReceiver" >
             <intent-filter>

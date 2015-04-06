@@ -9,13 +9,6 @@
         <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-2c7b3f93a4765de67fc456e30fee656c798d7e65.jar" />
     </item>
     <item
-        jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.twitter.cobalt\performance-metrics\0.2.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="39a316349636281051561b9abb23fdd6a2b17061">
-        <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-a6ac2440b7805aab245ec165a4a82b096ecf39a4.jar" />
-    </item>
-    <item
         jar="C:\Users\giri\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.6.1\efb0a36546aa8857ab8df358b106c1817e03cbee\retrofit-1.6.1.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -23,11 +16,11 @@
         <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\retrofit-1.6.1-95e3ec4b4e92e72a0b13c4933c9200c1cec05251.jar" />
     </item>
     <item
-        jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
+        jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.twitter.cobalt\performance-metrics\0.2.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-67634e1798ea56ad3ddd964afb679f7b339689a3.jar" />
+        sha1="39a316349636281051561b9abb23fdd6a2b17061">
+        <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-a6ac2440b7805aab245ec165a4a82b096ecf39a4.jar" />
     </item>
     <item
         jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
@@ -35,6 +28,13 @@
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
         <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-5fc34f5729febc589232e28a100f70cb1a68db14.jar" />
+    </item>
+    <item
+        jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-67634e1798ea56ad3ddd964afb679f7b339689a3.jar" />
     </item>
     <item
         jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-composer\0.7.3\classes.jar"
@@ -65,11 +65,25 @@
         <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-583e132f59b46c6c00513d77e44f2b8bd0394362.jar" />
     </item>
     <item
+        jar="C:\Users\giri\.gradle\caches\modules-2\files-2.1\com.stripe\stripe-java\1.15.1\a93ce4be4cca79ab3b591eb77064fbe803d696a1\stripe-java-1.15.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a93ce4be4cca79ab3b591eb77064fbe803d696a1">
+        <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\stripe-java-1.15.1-b83c42ac8d2a44d00f6cedcc5e12fa0de16574cf.jar" />
+    </item>
+    <item
         jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-59d97b885738ecea6acd2edfc36c462831a2c7a1.jar" />
+    </item>
+    <item
+        jar="D:\FinancialNotifier1\app\build\intermediates\exploded-aar\com.stripe\stripe-android\1.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="978fc15c7c15c6f50a47b6e990c6a7e9288ac60c">
+        <dex dex="D:\FinancialNotifier1\app\build\intermediates\pre-dexed\debug\classes-a84bc037b5923ccb9758387b51cb9e93b96322fa.jar" />
     </item>
     <item
         jar="C:\Users\giri\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"

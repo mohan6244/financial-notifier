@@ -2,11 +2,17 @@ package com.st.fn;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.stripe.android.Stripe;
+import com.stripe.android.TokenCallback;
+import com.stripe.android.model.Card;
+import com.stripe.android.model.Token;
 
 public class PaymentActivity extends ActionBarActivity {
     private Button mButton;
@@ -22,10 +28,35 @@ public class PaymentActivity extends ActionBarActivity {
         mButton = (Button) findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                CardNumber = (EditText) findViewById(R.id.editText5);
-                CVC = (EditText)
-                       findViewById(R.id.editText8);
+
                 ExpiryDate = (EditText)findViewById(R.id.editText9);
+
+                Card card = new Card("4242-4242-4242-4242", 12, 2016, "123");
+                if ( !card.validateCard() ) {
+                    // Show errors
+                    System.out.print("error card");
+                }
+
+                // "pk_test_wFckEVqq1fJ8EzDd8FVpEMZy"
+                boolean validation = card.validateCard();
+                if(validation) {
+                    if (validation) {
+                        new Stripe().createToken(
+                                card,
+                                "pk_test_wFckEVqq1fJ8EzDd8FVpEMZy",
+                                new TokenCallback() {
+                                    public void onSuccess(Token token) {
+                                        Log.d("suc", "Success");
+                                    }
+                                    public void onError(Exception error) {
+                                        Log.d("err", "Error");
+                                    }
+                                });
+                    }
+                }
+
+
+
 
             }
         });

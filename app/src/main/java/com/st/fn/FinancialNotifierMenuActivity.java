@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
@@ -20,7 +21,7 @@ public class FinancialNotifierMenuActivity extends Activity {
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
     private static final String TWITTER_KEY = "QA3OXb9nQQj2rYOmhWPVa7jhk";
     private static final String TWITTER_SECRET = "8wRZeKfW8IDVz0N9FP26Mxxco40empMTIsrll9LwxFSkANE5hm";
-
+    private Button button;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,9 @@ public class FinancialNotifierMenuActivity extends Activity {
 		Fabric.with(this, new Twitter(authConfig));
 		setContentView(R.layout.main);
 		setAlarm();
-		Database.getPreferences(this);
+
+			Database.getPreferences(this);
+
 	}
 
 	public void gotoVehiclesMenu(View v) {
@@ -67,6 +70,12 @@ public class FinancialNotifierMenuActivity extends Activity {
 		this.startActivity(intent);
 	}
 
+    public void goToPurchase(View v)
+    {
+        Intent intent= new Intent(this, PaymentActivity.class);
+        this.startActivity(intent);
+
+    }
 	public void setAlarm() {
 		Intent intent = new Intent(this, DateChangeBroadcastReceiver.class);
 		PendingIntent pi = PendingIntent.getBroadcast(this, 0, intent, 0);

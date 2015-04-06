@@ -164,6 +164,10 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <!-- From: file:/D:/FinancialNotifier1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- From: file:/D:/FinancialNotifier1/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
@@ -310,6 +314,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/D:/FinancialNotifier1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="action_settings">settings</string>
     <string name="app_name">Financial Notifier</string>
     <!-- From: file:/D:/FinancialNotifier1/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.4.0/res/values/values.xml -->
     <eat-comment/>
@@ -363,9 +368,15 @@
     <!-- From: file:/D:/FinancialNotifier1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello">Hello World, FinancialNotifierMenuActivity!</string>
+    <string name="hello_world">Hello world!</string>
     <!-- From: file:/D:/FinancialNotifier1/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
     <eat-comment/>
     <string name="kit_name">Twitter</string>
+    <!-- From: file:/D:/FinancialNotifier1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- From: file:/D:/FinancialNotifier1/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.3.2/res/values/values.xml -->
+    <eat-comment/>
     <string name="tw__allow_btn_txt">Allow</string>
     <!-- From: file:/D:/FinancialNotifier1/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.1.0/res/values/values.xml -->
     <eat-comment/>

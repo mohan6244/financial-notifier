@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.digits.sdk.android.Digits;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 
@@ -75,6 +76,12 @@ public class FinancialNotifierMenuActivity extends Activity {
         Intent intent= new Intent(this, PaymentActivity.class);
         this.startActivity(intent);
 
+    }
+    public void logOut(View v)
+    {
+        Digits.getSessionManager().clearActiveSession();
+        Intent i=new Intent(this,LoginActivity.class);
+        this.startActivity(i);
     }
 	public void setAlarm() {
 		Intent intent = new Intent(this, DateChangeBroadcastReceiver.class);

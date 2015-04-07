@@ -7,5 +7,17 @@
     <string name="title_activity_login">LoginActivity</string>
 
     <string name="hello_world">Hello world!</string>
+    <string-array name="year_array">
+        <item>Year</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
 
 </resources>

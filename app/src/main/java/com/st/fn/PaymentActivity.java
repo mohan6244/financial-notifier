@@ -16,7 +16,7 @@ import com.stripe.android.model.Token;
 
 public class PaymentActivity extends ActionBarActivity {
     private Button mButton;
-    EditText CardNumber,CVC,ExpiryDate;
+    EditText CardNumber,CVC,ExpiryDate,ExpireYear;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,15 +28,35 @@ public class PaymentActivity extends ActionBarActivity {
         mButton = (Button) findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+         CardNumber=(EditText)findViewById(R.id.editText5);
+                String str1=CardNumber.getText().toString();
+             ExpiryDate = (EditText)findViewById(R.id.editText9);
+                String str2=ExpiryDate.getText().toString();
+                int Month=Integer.parseInt(str2);
 
-                ExpiryDate = (EditText)findViewById(R.id.editText9);
-
-                Card card = new Card("4242-4242-4242-4242", 12, 2016, "123");
+             ExpireYear=(EditText)findViewById(R.id.editText10);
+                String str3=ExpireYear.getText().toString();
+                int Year=Integer.parseInt(str3);
+              CVC=(EditText)findViewById(R.id.editText8);
+                String str4=CVC.getText().toString();
+                Card card = new Card(str1, Month,Year, str4);
                 if ( !card.validateCard() ) {
                     // Show errors
-                    System.out.print("error card");
+                    //System.out.print("error card");
+                    Log.d("er","error card");
                 }
-
+                 if(!card.validateExpMonth())
+                 {
+                     Log.d("mn","error in month");
+                 }
+                if(!card.validateExpYear())
+                {
+                    Log.d("yy","Error in year");
+                }
+                if(!card.validateCVC())
+                {
+                    Log.d("cc","Error in cvc");
+                }
                 // "pk_test_wFckEVqq1fJ8EzDd8FVpEMZy"
                 boolean validation = card.validateCard();
                 if(validation) {

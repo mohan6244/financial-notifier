@@ -1,7 +1,5 @@
 package com.st.fn;
 
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -12,6 +10,8 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class AddVIActivity extends Activity {
 
@@ -29,15 +29,18 @@ public class AddVIActivity extends Activity {
 		setContentView(R.layout.add_vi);
 
 		editVehicleNo = (EditText) this.findViewById(R.id.editVehicleNo);
-		editVehicleDetails = (EditText) this
-				.findViewById(R.id.editVehicleDetails);
-		editVehicleValue = (EditText) this.findViewById(R.id.editVehicleValue);
-		editPolicyNo = (EditText) this.findViewById(R.id.editPolicyNo);
-		editCompany = (EditText) this.findViewById(R.id.editCompany);
-		editAmount = (EditText) this.findViewById(R.id.editAmount);
+        //while(editVehicleNo.getText().toString()!="")
+            //  Toast.makeText(this, "Enter vehicle number", Toast.LENGTH_LONG).show();
 
-		editStartDate = (EditText) this.findViewById(R.id.editStartDate);
-		editEndDate = (EditText) this.findViewById(R.id.editEndDate);
+            editVehicleDetails = (EditText) this
+                    .findViewById(R.id.editVehicleDetails);
+            editVehicleValue = (EditText) this.findViewById(R.id.editVehicleValue);
+            editPolicyNo = (EditText) this.findViewById(R.id.editPolicyNo);
+            editCompany = (EditText) this.findViewById(R.id.editCompany);
+            editAmount = (EditText) this.findViewById(R.id.editAmount);
+
+            editStartDate = (EditText) this.findViewById(R.id.editStartDate);
+            editEndDate = (EditText) this.findViewById(R.id.editEndDate);
 
 		
 		
